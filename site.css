@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --gap: 2rem;
+    --default-grid: [full-start] minmax(8vmin, auto) [wide-start] minmax(auto, 240px) [main-start] min(800px, 100% - 16vmin) [main-end] minmax(auto, 240px) [wide-end] minmax(8vmin, auto) [full-end];
+    --mobile-grid: [full-start] minmax(11px, 11px) [wide-start] minmax(11px, 11px) [main-start] min(980px, 100% - 44px) [main-end] minmax(11px, 11px) [wide-end] minmax(11px, 11px) [full-end];
+    --padded-grid: [full-start] minmax(8vmin, auto) [wide-start] minmax(auto, 240px) [main-start] min(940px, 100% - 16vmin) [main-end] minmax(auto, 240px) [wide-end] minmax(8vmin, auto) [full-end];
+}
+
+body {
+    line-height: 1.6;
+    font-size: 2.2rem;
+    font-family: "Bitter", serif;
+    background-image: -webkit-linear-gradient(#FEFED8, #FEFEAB);
+}
+
+section,
+footer {
+    display: grid;
+    grid-template-columns: var(--default-grid);
+}
+
+div.section-content {
+    grid-column-start: main-start;
+    grid-column-end: main-end;
+}
+
+div.section-content.divider {
+    border-top: 2px solid #FEE359;
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+
+}
+
+/*  ———————————————————————————————————————————————————————————————————————————
+    HEADER
+    ——————————————————————————————————————————————————————————————————————————— */
+
+header {
+    margin-block: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 6.7vw;
+    margin: 0;
+    width: max-content;
+    line-height: 1;
+}
+
+header h1:first-of-type {
+    font-size: 10vw;
+}
+
+header .date-text {
+    font-size: 4vw;
+}
+
+header .address-text {
+    text-align: center;
+}
+
+header sup {
+    font-size: 2vw;
+}
+
+.fa-solid {
+    color: #F73000;
+}
+
+/*  ———————————————————————————————————————————————————————————————————————————
+    TYPOGRAPHY
+    ——————————————————————————————————————————————————————————————————————————— */
+
+footer {
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #005200;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 630px) {
+    header h1 {
+        font-size: 4.2rem;
+    }
+
+    header h1:first-of-type {
+        font-size: 6.3rem;
+    }
+}
+
