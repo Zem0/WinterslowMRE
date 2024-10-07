@@ -74,8 +74,12 @@ header sup {
     TYPOGRAPHY
     ——————————————————————————————————————————————————————————————————————————— */
 
+a {
+    color: #F73000;
+}
+
 footer {
-    text-align: center;
+    text-align: center;margin-block: 5rem 10rem;
 }
 
 html {
