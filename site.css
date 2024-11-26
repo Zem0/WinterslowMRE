@@ -8,6 +8,7 @@
 }
 
 body {
+    margin: 0;
     line-height: 1.6;
     font-size: 2.2rem;
     font-family: "Bitter", serif;
@@ -31,16 +32,41 @@ div.section-content.divider {
 
 }
 
+.no-bullet {
+    list-style-type: none;
+}
+
 /*  ———————————————————————————————————————————————————————————————————————————
     HEADER
     ——————————————————————————————————————————————————————————————————————————— */
 
 header {
-    margin-block: 10rem;
+    margin-block-end: 10rem;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header *:not(.header-background) {
+    position: relative;
+}
+
+header .header-background {
+    padding-block-end: 14rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-image: url("images/TrainAtStation.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+}
+
+header .header-highlight {
+    color: #005200;
 }
 
 header h1 {
@@ -48,6 +74,7 @@ header h1 {
     margin: 0;
     width: max-content;
     line-height: 1;
+    text-shadow: .5vw .5vw #FEE358;
 }
 
 header h1:first-of-type {
@@ -55,11 +82,25 @@ header h1:first-of-type {
 }
 
 header .date-text {
-    font-size: 4vw;
+    font-size: max(4vw, 22px);
+    font-weight: 700;
+    text-shadow: .3vw .3vw #FEE358;
+    margin-block-start: 5rem;
 }
 
 header .address-text {
+    font-size: max(2vw, 22px);
     text-align: center;
+    font-weight: 700;
+    text-shadow: .2vw .2vw #FEE358;
+}
+
+header .address-text .fa-location-pin {
+    text-shadow: none;
+}
+
+header .station-decor {
+    margin-block-end: 10rem;
 }
 
 header sup {
