@@ -32,6 +32,16 @@ div.section-content.divider {
 
 }
 
+div.times {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    flex-direction: column;
+    color: #F73000;
+    font-weight: 700;
+}
+
 .no-bullet {
     list-style-type: none;
 }
