@@ -5,6 +5,9 @@
     <title>Winterslow MRE</title>
     <link rel="stylesheet" type="text/css" href="site.css">
     <script src="https://kit.fontawesome.com/264685ff43.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.js"></script>
+    <script src="_config.js"></script>
+    <script src="index.js"></script>
 
     <meta name="format-detection" content="telephone=no">
 </head>
@@ -200,6 +203,24 @@
     </section>
     <section>
         <div class="section-content divider">
+        </div>
+    </section>
+    <section>
+        <div class="section-content">
+            <div class="container">
+                <h2>2025 Gallery</h2>
+                <div id="galleryContainer"></div>
+            </div>
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close" onclick="closeLightbox()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="lightbox-content">
+                    <img id="lightboxImage" src="" alt="">
+                </div>
+            </div>
         </div>
     </section>
     <footer>
