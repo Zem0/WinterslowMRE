@@ -1,0 +1,6 @@
+# Generated config file - DO NOT COMMIT
+_config.js
+config.js
+
+# Keep the example file for reference
+!config.example.js
