@@ -1,5 +1,5 @@
 {
-  "buildCommand": "bash build.sh",
+  "buildCommand": "sh build.sh",
   "outputDirectory": ".",
   "installCommand": "echo 'No dependencies to install'"
 }
